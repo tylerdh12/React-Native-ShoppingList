@@ -1,0 +1,48 @@
+Create an Item:
+
+mutation{
+  createItem(data: {
+    title: "Hand Soap"
+    completed: false
+  }){
+    _id
+    title
+    completed
+  }
+}
+
+Show all Items: 
+
+query {
+  allItems {
+    data{
+      _id
+      title
+      completed
+    }
+  }
+}
+
+
+Update an Item: 
+
+mutation {
+  updateItem(
+    id: "269353103103361548"
+    data: { title: "Hand Soap", completed: true }
+  ) {
+    _id
+    title
+    completed
+  }
+}
+
+Delete an Item: 
+
+mutation {
+  deleteItem(id: "269353103103361548"){
+    _id
+    title
+    completed
+  }
+}

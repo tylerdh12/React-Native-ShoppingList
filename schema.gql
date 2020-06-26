@@ -1,0 +1,9 @@
+type Item {
+  title: String!
+  completed: Boolean
+}
+
+type Query {
+  allItems: [Item!]
+  itemsByCompletedFlag(completed: Boolean!): [Item!]
+}
