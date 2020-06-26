@@ -10,7 +10,7 @@ const ListItem = ({item, deleteItem}) => {
         <Text style={styles.listItemText}>{item.text}</Text>
         <Icon
           name="remove"
-          size={30}
+          size={35}
           color="firebrick"
           onPress={() => {
             deleteItem(item.id);
